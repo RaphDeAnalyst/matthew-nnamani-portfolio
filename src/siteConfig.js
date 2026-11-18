@@ -4,4 +4,6 @@ export const siteConfig = {
   linkedinUrl: "https://linkedin.com/in/matthew-nnamani",
   githubUrl: "https://github.com/RaphDeAnalyst",
   weeklyOpsBriefRepositoryUrl: "https://github.com/RaphDeAnalyst/weekly-ops-brief",
+  executiveMeetingIntelligenceUrl: "https://raphdeanalyst.github.io/executive-meeting-intelligence/",
+  executiveMeetingIntelligenceRepositoryUrl: "https://github.com/RaphDeAnalyst/executive-meeting-intelligence",
 };

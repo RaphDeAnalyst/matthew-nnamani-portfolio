@@ -177,20 +177,20 @@ function About() {
   );
 }
 
-function ProjectPreview() {
+function ProjectPreview({ url, title, displayUrl, ariaLabel }) {
   return (
     <div className="project-preview">
       <div className="project-preview__bar">
         <div className="browser-dots" aria-hidden="true"><i /><i /><i /></div>
-        <span className="project-preview__url">raphdeanalyst.github.io / weekly-ops-brief</span>
-        <a href={projectUrl} target="_blank" rel="noreferrer" aria-label="Open Weekly Ops Brief in a new tab">
+        <span className="project-preview__url">{displayUrl}</span>
+        <a href={url} target="_blank" rel="noreferrer" aria-label={ariaLabel}>
           <ArrowUpRight size={15} aria-hidden="true" />
         </a>
       </div>
       <iframe
         className="project-preview__frame"
-        src={projectUrl}
-        title="Live preview of the Weekly Ops Brief application"
+        src={url}
+        title={title}
         loading="lazy"
         referrerPolicy="strict-origin-when-cross-origin"
       />
@@ -228,7 +228,12 @@ function Project() {
 
         <div className="project-layout">
           <div className="project-layout__main">
-            <ProjectPreview />
+            <ProjectPreview
+              url={projectUrl}
+              title="Live preview of the Weekly Ops Brief application"
+              displayUrl="raphdeanalyst.github.io / weekly-ops-brief"
+              ariaLabel="Open Weekly Ops Brief in a new tab"
+            />
             <div className="project-description">
               <span className="project-description__label">The project</span>
               <p>
@@ -293,6 +298,46 @@ function Project() {
                 <Github size={15} aria-hidden="true" /> Repository link to be added
               </span>
             )}
+          </div>
+        </div>
+
+        <div className="secondary-project">
+          <div className="secondary-project__heading">
+            <div>
+              <p className="project-heading__type">Independent project <span>·</span> Executive workflow intelligence</p>
+              <h3>Executive Meeting <em>Intelligence</em></h3>
+            </div>
+            <a className="project-live-link" href={siteConfig.executiveMeetingIntelligenceUrl} target="_blank" rel="noreferrer">
+              Open live application <ArrowUpRight size={15} aria-hidden="true" />
+            </a>
+          </div>
+          <div className="secondary-project__layout">
+            <ProjectPreview
+              url={siteConfig.executiveMeetingIntelligenceUrl}
+              title="Live preview of Executive Meeting Intelligence"
+              displayUrl="raphdeanalyst.github.io / executive-meeting-intelligence"
+              ariaLabel="Open Executive Meeting Intelligence in a new tab"
+            />
+            <div className="secondary-project__copy">
+              <div>
+                <span className="project-aside__label">The project</span>
+                <p>
+                  A meeting intelligence workspace that brings executive updates,
+                  action items, overdue work and pending decisions into one clear
+                  operational view.
+                </p>
+              </div>
+              <div>
+                <span className="project-aside__label">What it demonstrates</span>
+                <p>
+                  Independent initiative, executive workflow design, information
+                  synthesis, interface implementation and practical operational thinking.
+                </p>
+              </div>
+              <a className="repository-link" href={siteConfig.executiveMeetingIntelligenceRepositoryUrl} target="_blank" rel="noreferrer">
+                <Github size={15} aria-hidden="true" /> View source on GitHub <ArrowUpRight size={14} aria-hidden="true" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
