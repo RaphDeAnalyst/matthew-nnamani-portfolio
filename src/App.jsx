@@ -340,6 +340,46 @@ function Project() {
             </div>
           </div>
         </div>
+
+        <div className="secondary-project">
+          <div className="secondary-project__heading">
+            <div>
+              <p className="project-heading__type">Independent project <span>·</span> Executive communications</p>
+              <h3>Executive Inbox <em>&amp; Follow-up Manager</em></h3>
+            </div>
+            <a className="project-live-link" href={siteConfig.executiveInboxManagerUrl} target="_blank" rel="noreferrer">
+              Open live application <ArrowUpRight size={15} aria-hidden="true" />
+            </a>
+          </div>
+          <div className="secondary-project__layout">
+            <ProjectPreview
+              url={siteConfig.executiveInboxManagerUrl}
+              title="Live preview of Executive Inbox & Follow-up Manager"
+              displayUrl="raphdeanalyst.github.io / executive-inbox-manager"
+              ariaLabel="Open Executive Inbox & Follow-up Manager in a new tab"
+            />
+            <div className="secondary-project__copy">
+              <div>
+                <span className="project-aside__label">The project</span>
+                <p>
+                  A local-first executive inbox workspace that organises messages,
+                  highlights items requiring attention and tracks overdue and
+                  upcoming follow-ups.
+                </p>
+              </div>
+              <div>
+                <span className="project-aside__label">What it demonstrates</span>
+                <p>
+                  Inbox prioritisation, follow-up tracking, operational organisation,
+                  AI-assisted interface development and practical executive support.
+                </p>
+              </div>
+              <a className="repository-link" href={siteConfig.executiveInboxManagerRepositoryUrl} target="_blank" rel="noreferrer">
+                <Github size={15} aria-hidden="true" /> View source on GitHub <ArrowUpRight size={14} aria-hidden="true" />
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

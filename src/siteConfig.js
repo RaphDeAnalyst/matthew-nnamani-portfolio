@@ -6,4 +6,6 @@ export const siteConfig = {
   weeklyOpsBriefRepositoryUrl: "https://github.com/RaphDeAnalyst/weekly-ops-brief",
   executiveMeetingIntelligenceUrl: "https://raphdeanalyst.github.io/executive-meeting-intelligence/",
   executiveMeetingIntelligenceRepositoryUrl: "https://github.com/RaphDeAnalyst/executive-meeting-intelligence",
+  executiveInboxManagerUrl: "https://raphdeanalyst.github.io/executive-inbox-manager",
+  executiveInboxManagerRepositoryUrl: "https://github.com/RaphDeAnalyst/executive-inbox-manager",
 };
