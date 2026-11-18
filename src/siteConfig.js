@@ -3,5 +3,5 @@ export const siteConfig = {
   email: "matthewnnamani93@gmail.com",
   linkedinUrl: "https://linkedin.com/in/matthew-nnamani",
   githubUrl: "https://github.com/RaphDeAnalyst",
-  weeklyOpsBriefRepositoryUrl: "",
+  weeklyOpsBriefRepositoryUrl: "https://github.com/RaphDeAnalyst/weekly-ops-brief",
 };
